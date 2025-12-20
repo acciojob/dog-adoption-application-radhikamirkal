@@ -5,21 +5,21 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
+      background-color: #f2f2f2;
     }
 
     form {
       width: 400px;
       margin: 40px auto;
       padding: 20px;
-      background-color: #ffffff;
+      background-color: white;
       border: 1px solid #ccc;
-      border-radius: 6px;
+      border-radius: 5px;
     }
 
     label {
       display: block;
-      margin-top: 12px;
+      margin-top: 10px;
       font-weight: bold;
     }
 
@@ -27,31 +27,21 @@
     select {
       width: 100%;
       padding: 8px;
-      margin-top: 6px;
-      box-sizing: border-box;
+      margin-top: 5px;
     }
 
     select {
-      height: 100px;
-    }
-
-    input[type="checkbox"] {
-      margin-right: 8px;
+      height: 90px;
     }
 
     input[type="submit"] {
-      margin-top: 20px;
+      margin-top: 15px;
       padding: 10px;
       width: 100%;
       background-color: #4CAF50;
       color: white;
       border: none;
       cursor: pointer;
-      font-size: 16px;
-    }
-
-    input[type="submit"]:hover {
-      background-color: #45a049;
     }
   </style>
 </head>
@@ -59,22 +49,27 @@
 <body>
 
 <form>
-  <label for="name">Name</label>
-  <input type="text" id="name" placeholder="Name">
+  <label>Name</label>
+  <input type="text" id="name" name="name" placeholder="Name">
 
-  <label for="phone">Phone Number</label>
-  <input type="text" id="phone" placeholder="Phone Number">
+  <label>Phone Number</label>
+  <input type="text" id="phone" name="phone" placeholder="Phone Number">
 
-  <label for="address">Address</label>
-  <input type="text" id="address" placeholder="Address">
+  <label>Address</label>
+  <input type="text" id="address" name="address" placeholder="Address">
 
   <label>
-    <input type="checkbox" value="Have you ever lived with a Dog before?">
+    <input
+      type="checkbox"
+      id="checkbox"
+      name="checkbox"
+      value="Have you ever lived with a Dog before?"
+    >
     Have you ever lived with a Dog before?
   </label>
 
-  <label for="breeds">Please select your preferred breeds</label>
-  <select id="breeds" multiple>
+  <label>Please select your preferred breeds</label>
+  <select id="breeds" name="breeds" multiple>
     <option>Golden Retriever</option>
     <option>Poodle</option>
     <option>Labrador</option>
